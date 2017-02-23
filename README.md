@@ -1,2 +1,2 @@
 # TukiTest
-~~~Generating a test program Tuk~~~
+Generating a test program Tuki
