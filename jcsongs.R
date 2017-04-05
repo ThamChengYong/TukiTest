@@ -12,7 +12,18 @@ readinteger <- function()
   else if (n==2)
     browseURL('https://www.youtube.com/watch?v=_VxLOj3TB5k', browser = getOption("browser"),
               encodeIfNeeded = FALSE)
-  cat('Any more songs?','\n')
+
+  n <- readline(prompt=paste('Any more songs?','\n'))
+  
+  thepage = readLines(paste('https://www.youtube.com/results?search_query=',n))
+  lockupcontent = thepage[grep('yt-lockup-content',thepage)[1]]
+  goodlines1 = gregexpr('/watch',lockupcontent)[[1]][1]
+  goodlines2 = gregexpr(' class=\"yt-uix-tile-link',lockupcontent)[[1]][1]
+  string = substring(lockupcontent,goodlines1,goodlines2)
+  browseURL(paste('https://www.youtube.com',string,sep=''), browser = getOption("browser"),
+            encodeIfNeeded = FALSE)
 }
+
+
 
 readinteger()
