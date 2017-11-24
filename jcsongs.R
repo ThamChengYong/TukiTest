@@ -34,7 +34,7 @@ readinteger()
 
 #                            _   _              BBBB
 #                          /      \            BB()BB
-#                         |        |            BBBB
+#                         |   ww   |            BBBB
 #                          \ (^^) /            .. | ...
 #                            |  |              ''.v\c.'`
 #                                                  |
