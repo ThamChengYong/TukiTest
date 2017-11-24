@@ -33,7 +33,7 @@ readinteger <- function()
 readinteger()
 
 #                            _   _              BBBB
-#                          /      \            BB(•)BB
+#                          /      \            BB()BB
 #                         |        |            BBBB
 #                          \ (^^) /            .. | ...
 #                            |  |              ''.v\c.'`
