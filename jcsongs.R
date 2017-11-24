@@ -14,11 +14,12 @@ readinteger <- function()
               encodeIfNeeded = FALSE)
 
   n <- readline(prompt=paste('Any more songs?','\n'))
-  
-  thepage = readLines(paste('https://www.youtube.com/results?search_query=',n))
+  n = gsub(" ","+",n)
+  thepage = readLines(paste('https://www.youtube.com/results?search_query=',n,sep=""))
   lockupcontent = thepage[grep('yt-lockup-content',thepage)[1]]
   goodlines1 = gregexpr('/watch',lockupcontent)[[1]][1]
   goodlines2 = gregexpr(' class=\"yt-uix-tile-link',lockupcontent)[[1]][1]
+  goodlines2 = as.integer(goodlines2) - 2
   string = substring(lockupcontent,goodlines1,goodlines2)
   browseURL(paste('https://www.youtube.com',string,sep=''), browser = getOption("browser"),
             encodeIfNeeded = FALSE)
