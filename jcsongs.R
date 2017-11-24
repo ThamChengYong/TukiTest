@@ -16,6 +16,7 @@ readinteger <- function()
               encodeIfNeeded = FALSE)
 
   n <- readline(prompt=paste('Song name?','\n'))
+  if (n==0) return("Stopped") else
   n = gsub(" ","+",n)
   thepage = readLines(paste('https://www.youtube.com/results?search_query=',n,sep=""))
   lockupcontent = thepage[grep('yt-lockup-content',thepage)[1]]
@@ -30,3 +31,10 @@ readinteger <- function()
 
 
 readinteger()
+
+#                            _   _              BBBB
+#                          /      \            BB(•)BB
+#                         |        |            BBBB
+#                          \ (^^) /            .. | ...
+#                            |  |              ''.v\c.'`
+#                                                  |
