@@ -1,0 +1,112 @@
+#Disabled bowtie2 Linux
+f846237582adf9340d40f9c23e2563e4  ref.fa
+353914b702cdb564ebfa41fa8819bc77  lread_test.fa.gz
+3168ccfb91a64a6d0e3174b05bab9adf  sread1.names_48k.fa.gz
+399fa36013ebec490df7923963ed6892  sread2.names_48k.fa.gz
+c76d425ecd5af4ef0c6059da6e4bb847  ref.fa.fai
+b95f9a36c118811952a149562a7f2d61  ref.fa.nhr
+				  ref.fa.nin
+45d73fff1fd267ff5606831f99a0952d  ref.fa.nsq
+dd20f9ca6221d6ccb3ac9f686e7564b1  ref.fa.bwt
+				  ref.fa.header
+3c4bddf8ddc525bc0fee6ea2ad1ac714  ref.fa.sa
+8506e7d6ecdb13a205dfb5ddc0ee6870  ref.fa.sequence
+2c5c01b1dcfe571a074120d5ae151051  ref.fa.counts
+0b30579e91aeb001cdb57701cbe31579  ref.fa.counts.obinary
+8c68ba585e3584c0c8e8b2ad13964faf  lread_test.hsblast-ref
+ff94b45ed1f26168c41e052129fe8afe  lread_test.hsblast-ref.SV0.95.parse150.tsv
+77278e2a804d01a6f61fdcb473ef2f96  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.tsv
+c85f902a7d28c31c02556fb3907fc749  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN.tsv
+f53415c30e2b085e0c683ea74deb67a8  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN0.6.tsv
+253f1c596f11dc690c32f614636b760a  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN0.6.cov.tsv
+fcdad6f0761574eba4afa514a5c11680  tail -n +9 vcf
+
+#Enabled bowtie2 Linux
+f846237582adf9340d40f9c23e2563e4  ref.fa
+353914b702cdb564ebfa41fa8819bc77  lread_test.fa.gz
+3168ccfb91a64a6d0e3174b05bab9adf  sread1.names_48k.fa.gz
+399fa36013ebec490df7923963ed6892  sread2.names_48k.fa.gz
+c76d425ecd5af4ef0c6059da6e4bb847  ref.fa.fai
+b95f9a36c118811952a149562a7f2d61  ref.fa.nhr
+				  ref.fa.nin
+45d73fff1fd267ff5606831f99a0952d  ref.fa.nsq
+dd20f9ca6221d6ccb3ac9f686e7564b1  ref.fa.bwt
+				  ref.fa.header
+3c4bddf8ddc525bc0fee6ea2ad1ac714  ref.fa.sa
+8506e7d6ecdb13a205dfb5ddc0ee6870  ref.fa.sequence
+2c5c01b1dcfe571a074120d5ae151051  ref.fa.counts
+0b30579e91aeb001cdb57701cbe31579  ref.fa.counts.obinary
+8c68ba585e3584c0c8e8b2ad13964faf  lread_test.hsblast-ref
+ff94b45ed1f26168c41e052129fe8afe  lread_test.hsblast-ref.SV0.95.parse150.tsv
+77278e2a804d01a6f61fdcb473ef2f96  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.tsv
+c85f902a7d28c31c02556fb3907fc749  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN.tsv
+f53415c30e2b085e0c683ea74deb67a8  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN0.6.tsv
+60d6b4bb87279446da534542a6166eec  lread_test.overlap.ANN0.6.correct.1.bt2
+ce1323e7bcdea620c3652637f90612a7  lread_test.overlap.ANN0.6.correct.2.bt2
+8e45fe634aaf31ed863b8113d031563a  lread_test.overlap.ANN0.6.correct.3.bt2
+0370c58c494dc6b2f4d0c5ee51bf1f45  lread_test.overlap.ANN0.6.correct.4.bt2
+5ec77f71f659b044b14a40097c8ab541  lread_test.overlap.ANN0.6.correct.rev.1.bt2
+8e917250a3dc2cd47e009f2ae57cf309  lread_test.overlap.ANN0.6.correct.rev.2.bt2
+c86f77001491488416951f696eb2e44f  lread_test.overlap.ANN0.6.correct.bow-longr-f2-ns.bam > sam
+6eb7ae35e9976b93b8b3af050102164a  lread_test.overlap.ANN0.6.correct.bow-longr-f2-ns_1.fastq
+b353d4c2971556410ec118b6e696dda7  lread_test.overlap.ANN0.6.correct.bow-longr-f2-ns_2.fastq
+8c5babf86768d0d3612e362b5749e34d  lread_test.overlap.ANN0.6.correct.bow-longr-f2-ns_bow-ref-F2-ns_bow-longr-f2-s.bedgraph
+3c24c06f985589083aec3db84013375b  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN0.6.0-100.tsv
+02846d837358fe46fa673e493704d67e  tail -n +9 vcf
+
+#Disabled bowtie2 Mac
+f846237582adf9340d40f9c23e2563e4  ref.fa
+353914b702cdb564ebfa41fa8819bc77  lread_test.fa.gz
+3168ccfb91a64a6d0e3174b05bab9adf  sread1.names_48k.fa.gz
+399fa36013ebec490df7923963ed6892  sread2.names_48k.fa.gz
+c76d425ecd5af4ef0c6059da6e4bb847  ref.fa.fai
+b95f9a36c118811952a149562a7f2d61  ref.fa.nhr
+				  ref.fa.nin
+45d73fff1fd267ff5606831f99a0952d  ref.fa.nsq
+dd20f9ca6221d6ccb3ac9f686e7564b1  ref.fa.bwt
+				  ref.fa.header
+3c4bddf8ddc525bc0fee6ea2ad1ac714  ref.fa.sa
+8506e7d6ecdb13a205dfb5ddc0ee6870  ref.fa.sequence
+2c5c01b1dcfe571a074120d5ae151051  ref.fa.counts
+0b30579e91aeb001cdb57701cbe31579  ref.fa.counts.obinary
+e1a03413af0a3ca353af416bbb266470  lread_test.hsblast-ref
+a47bf00f659d3ad3c775a5d8ef42aad1  lread_test.hsblast-ref.SV0.95.parse150.tsv
+53341ad7585853a5b443d5114a76f8ab  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.tsv
+1507254320520cac75674a96705747cc  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN.tsv
+e08d7a1b0f89d2aa7bd507ac7115fee9  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN0.6.tsv
+87c8aea664e40c63442b08179549d25b  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN0.6.cov.tsv
+7b3d6ff15231a9bfcc16e0be36164caa  tail -n +9 vcf
+
+#Enabled bowtie2 Mac
+f846237582adf9340d40f9c23e2563e4  ref.fa
+353914b702cdb564ebfa41fa8819bc77  lread_test.fa.gz
+3168ccfb91a64a6d0e3174b05bab9adf  sread1.names_48k.fa.gz
+399fa36013ebec490df7923963ed6892  sread2.names_48k.fa.gz
+c76d425ecd5af4ef0c6059da6e4bb847  ref.fa.fai
+b95f9a36c118811952a149562a7f2d61  ref.fa.nhr
+				  ref.fa.nin
+45d73fff1fd267ff5606831f99a0952d  ref.fa.nsq
+dd20f9ca6221d6ccb3ac9f686e7564b1  ref.fa.bwt
+				  ref.fa.header
+3c4bddf8ddc525bc0fee6ea2ad1ac714  ref.fa.sa
+8506e7d6ecdb13a205dfb5ddc0ee6870  ref.fa.sequence
+2c5c01b1dcfe571a074120d5ae151051  ref.fa.counts
+0b30579e91aeb001cdb57701cbe31579  ref.fa.counts.obinary
+e1a03413af0a3ca353af416bbb266470  lread_test.hsblast-ref
+a47bf00f659d3ad3c775a5d8ef42aad1  lread_test.hsblast-ref.SV0.95.parse150.tsv
+53341ad7585853a5b443d5114a76f8ab  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.tsv
+1507254320520cac75674a96705747cc  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN.tsv
+e08d7a1b0f89d2aa7bd507ac7115fee9  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN0.6.tsv
+60d6b4bb87279446da534542a6166eec  lread_test.overlap.ANN0.6.correct.1.bt2
+ce1323e7bcdea620c3652637f90612a7  lread_test.overlap.ANN0.6.correct.2.bt2
+8e45fe634aaf31ed863b8113d031563a  lread_test.overlap.ANN0.6.correct.3.bt2
+0370c58c494dc6b2f4d0c5ee51bf1f45  lread_test.overlap.ANN0.6.correct.4.bt2
+5ec77f71f659b044b14a40097c8ab541  lread_test.overlap.ANN0.6.correct.rev.1.bt2
+8e917250a3dc2cd47e009f2ae57cf309  lread_test.overlap.ANN0.6.correct.rev.2.bt2
+c86f77001491488416951f696eb2e44f  lread_test.overlap.ANN0.6.correct.bow-longr-f2-ns.bam
+6eb7ae35e9976b93b8b3af050102164a  lread_test.overlap.ANN0.6.correct.bow-longr-f2-ns_1.fastq
+b353d4c2971556410ec118b6e696dda7  lread_test.overlap.ANN0.6.correct.bow-longr-f2-ns_2.fastq
+8c5babf86768d0d3612e362b5749e34d  lread_test.overlap.ANN0.6.correct.bow-longr-f2-ns_bow-ref-F2-ns_bow-longr-f2-s.bedgraph
+266eca48a54494c880fd1fbf17850aa3  lread_test.hsblast-ref.SV0.95.parse150.1-19.overlap.ANN0.6.0-100.tsv
+4288b7058cef7f3db3c531363bed55ba  tail -n +9 vcf
+
