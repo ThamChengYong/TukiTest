@@ -902,6 +902,8 @@ distclean: $(SUBDIRS) $(hsblastdir)
 	@rm -f $(DIR)/Makefile
 	@rm -f $(DIR)/test/md5.out
 	@rm -f $(DIR)/config.log
+	@rm -rf $(DIR)/autom4te.cache
+	@rm -f $(DIR)/config.status
 	@echo "DISTCLEAN"
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

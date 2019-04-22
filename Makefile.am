@@ -183,4 +183,6 @@ distclean: $(SUBDIRS) $(hsblastdir)
 	@rm -f $(DIR)/Makefile
 	@rm -f $(DIR)/test/md5.out
 	@rm -f $(DIR)/config.log
+	@rm -rf $(DIR)/autom4te.cache
+	@rm -f $(DIR)/config.status
 	@echo "DISTCLEAN"
