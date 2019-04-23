@@ -73,7 +73,7 @@ plt.ylabel('Confidence score')
 plt.xlabel('Breakend read ratio')
 plt.ylim(ymin=-0.3)
 #plt.title("SV score vs SV read ratio")
-plt.savefig('figures/scatter1.png',bbox_inches='tight', dpi=700, facecolor=fig.get_facecolor(), edgecolor='none')
+plt.savefig('figures/scatter1.png',bbox_inches='tight', dpi=100, facecolor=fig.get_facecolor(), edgecolor='none')
 
 fig = plt.figure(figsize=(8, 6))
 fig.patch.set_facecolor('#f6f7f9')
@@ -87,7 +87,7 @@ plt.ylabel('Confidence score')
 plt.xlabel('Number of breakend-supporting reads')
 plt.ylim(ymin=-0.3)
 #plt.title("SV score vs SV read depth")
-plt.savefig('figures/scatter2.png',bbox_inches='tight', dpi=700, facecolor=fig.get_facecolor(), edgecolor='none')
+plt.savefig('figures/scatter2.png',bbox_inches='tight', dpi=100, facecolor=fig.get_facecolor(), edgecolor='none')
 
 scorelist = []
 ratiolist = []
@@ -186,7 +186,7 @@ ax.xaxis.grid(False)
 ax.yaxis.grid(color='white', linewidth=1)
 plt.ylabel('Length (base pair)')
 #plt.title("Distribution of known SV lengths across SV types")
-plt.savefig('figures/sv_lengths.png',bbox_inches='tight', dpi=700, facecolor=fig.get_facecolor(), edgecolor='none')
+plt.savefig('figures/sv_lengths.png',bbox_inches='tight', dpi=100, facecolor=fig.get_facecolor(), edgecolor='none')
 
 #Donut SV types
 fig, ax = plt.subplots(figsize=(10, 5), subplot_kw=dict(aspect="equal"))
@@ -223,7 +223,7 @@ ax.text(0, 0, 'SV types', ha='center')
 #plt.title("Distribution of SV types", y=1.10)
 #ax.axis('equal')  
 #fig.tight_layout()
-plt.savefig('figures/sv_type_donut.png',bbox_inches='tight', dpi=700, facecolor=fig.get_facecolor(), edgecolor='none')
+plt.savefig('figures/sv_type_donut.png',bbox_inches='tight', dpi=100, facecolor=fig.get_facecolor(), edgecolor='none')
 
 #Read length distribution
 def measureQlen(fasta):
@@ -248,7 +248,7 @@ ax.set_facecolor('#ebebff')
 plt.xlabel("Read length (bases)")
 plt.ylabel("Number of reads") 
 #plt.title("Distribution of read lengths")
-plt.savefig('figures/read_length_dist.png',bbox_inches='tight', dpi=700, facecolor=fig.get_facecolor(), edgecolor='none')
+plt.savefig('figures/read_length_dist.png',bbox_inches='tight', dpi=100, facecolor=fig.get_facecolor(), edgecolor='none')
 
 '''
 fig = plt.figure()
