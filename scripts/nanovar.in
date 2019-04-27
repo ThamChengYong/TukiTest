@@ -696,7 +696,7 @@ echo -ne 'Progress: [ ######-------------- ]  (32%)\r' >> $stout
 if [ $splitx -lt 1 ]; then
         split=1
 else
-        split=$splitx
+        split=1 #$splitx   Split not in use
 fi
 
 #Splitted coverage
