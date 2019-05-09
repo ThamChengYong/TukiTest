@@ -97,6 +97,12 @@ def getSignature(bp1, name, querymap, sign, realnmaps, elist, bitlist, bps_no, c
                 break
     return signature
 
+def trysort(a,b):
+    try:
+        return sorted([a,b])
+    except:
+        return [a,b]
+
 logging.info('Start SV Parsing...')
 for i in c:
     g = g + 1
@@ -275,7 +281,7 @@ for i in c:
             coord2_1 = breakpointfile[i].split('\t')[13].split(' ')[1].split(',')[int(inter_ins_count - inter_ins_counter)].split('~')[1].split(':')[1]
             interins_size = breakpointfile[i].split('\t')[13].split(' ')[0].split(',')[int(inter_ins_count - inter_ins_counter)].split(')')[1]
             chrmdict = {chrnum(chrom1):coord1_1, chrnum(chrom2):coord2_1}
-            chrmlist = sorted([chrnum(chrom1), chrnum(chrom2)])
+            chrmlist = trysort(chrnum(chrom1),chrnum(chrom2)) #chrmlist = sorted([chrnum(chrom1), chrnum(chrom2)])
             pair = 'Inter1'
             uniqidx = bp_uname + '~' + str(revchrnum(chrmlist[0])) + ':' + str(chrmdict[chrmlist[0]]) + '~' + str(revchrnum(chrmlist[1])) + ':' + str(chrmdict[chrmlist[1]])
             uniqname = read_name + '~' + bp_uname
@@ -291,7 +297,7 @@ for i in c:
             coord2_1 = breakpointfile[i].split('\t')[13].split(' ')[1].split(',')[int(inter_ins_count - inter_ins_counter)].split('~')[1].split(':')[1]
             interins_size = breakpointfile[i].split('\t')[13].split(' ')[0].split(',')[int(inter_ins_count - inter_ins_counter)].split(')')[1]
             chrmdict = {chrnum(chrom1):coord1_1, chrnum(chrom2):coord2_1}
-            chrmlist = sorted([chrnum(chrom1), chrnum(chrom2)])
+            chrmlist = trysort(chrnum(chrom1),chrnum(chrom2)) #chrmlist = sorted([chrnum(chrom1), chrnum(chrom2)])
             pair = 'Inter2'
             uniqidx = bp_uname + '~' + str(revchrnum(chrmlist[0])) + ':' + str(chrmdict[chrmlist[0]]) + '~' + str(revchrnum(chrmlist[1])) + ':' + str(chrmdict[chrmlist[1]])
             uniqname = read_name + '~' + bp_uname
@@ -306,7 +312,7 @@ for i in c:
             chrom2 = breakpointfile[i].split('\t')[14].split(' ')[1].split(',')[int(inter_tx_count - inter_tx_counter)].split('~')[1].split(':')[0]
             coord2_1 = breakpointfile[i].split('\t')[14].split(' ')[1].split(',')[int(inter_tx_count - inter_tx_counter)].split('~')[1].split(':')[1]
             chrmdict = {chrnum(chrom1):coord1_1, chrnum(chrom2):coord2_1}
-            chrmlist = sorted([chrnum(chrom1), chrnum(chrom2)])
+            chrmlist = trysort(chrnum(chrom1),chrnum(chrom2)) #chrmlist = sorted([chrnum(chrom1), chrnum(chrom2)])
             pair = '.'
             uniqidx = bp_uname + '~' + str(revchrnum(chrmlist[0])) + ':' + str(chrmdict[chrmlist[0]]) + '~' + str(revchrnum(chrmlist[1])) + ':' + str(chrmdict[chrmlist[1]])
             uniqname = read_name + '~' + bp_uname

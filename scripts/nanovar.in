@@ -23,11 +23,11 @@
 recordcommand="$0 $@"
 
 #Helpmenu
-function helpmenu() { echo "NanoVar - A tool for structural variant characterization using low-depth Nanopore Sequencing.
+function helpmenu() { echo "NanoVar - Structural variant caller for low-depth Nanopore Sequencing.
 Author: Tham Cheng Yong
 Version 1.0
 Usage:
-    "$0" [OPTIONS] -r reference_genome.fa -l longread.fa -t num_threads -o <Output_Dir>
+    "$0" [OPTIONS] -r reference_genome.fa -l longread.fa -t num_threads -o <Output_Dir> -f hg38
 
 Options:
     -h, --help          Show this help menu
@@ -38,14 +38,14 @@ Options:
     -s1 FILE            NGS paired-end short read first mates in FASTQ/FASTA or gzip-compressed FASTQ/FASTA (Optional)
     -s2 FILE            NGS paired-end short read second mates in FASTQ/FASTA or gzip-compressed FASTQ/FASTA (Optional)
     -o DIR              Output directory
-    -t INT              Number of threads available for use. [1]
+    -t INT              Number of threads available for use. (<=53) [Default=1]
     -f, --filter FILE   BED file with genomic regions to be excluded (e.g. telomeres and centromeres). Either specify name of 
-                        supported reference genome filter (i.e. hg38, hg19, mm10, mm9) or provide FULL path to own BED file. [None]
-    -w, --SVlen INT     Minimum length estimation of SV to be detected, >=100 bases recommended. [100]
-    -n, --mincov INT    Minimum coverage of short reads spanning over SV breakpoint region on long read [0]
-    -m, --maxcov INT    Maximum coverage of short reads spanning over SV breakpoint region on long read [100]
-    -p FLOAT            Minimum percentage of unmapped bases within a long read to be considered as a split-read (0.05 to 0.50) [0.05]
-    -S FLOAT            SV threshold score, increasing this will increase precision but decrease recall (=<0) [2.6]"
+                        supported reference genome filter (i.e. hg38, hg19, mm10, mm9) or provide FULL path to own BED file. [Default=None]
+    -w, --SVlen INT     Minimum length estimation of SV to be detected, >=100 bases recommended. [Default=100]
+    -n, --mincov INT    Minimum coverage of short reads spanning over SV breakpoint region on long read [Default=0]
+    -m, --maxcov INT    Maximum coverage of short reads spanning over SV breakpoint region on long read [Default=100]
+    -p FLOAT            Minimum percentage of unmapped bases within a long read to be considered as a split-read (0.05 to 0.50) [Default=0.05]
+    -S FLOAT            SV threshold score, increasing this will increase precision but decrease recall (<=0) [Default=2.6]"
 }
 
 function version() { echo "NanoVar-1.0";
