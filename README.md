@@ -40,8 +40,8 @@ Optional: Bowtie2 (version 2.3.4 or higher, required only if short-reads will be
 ### 2. Installation
 #### Clone git repository:
 ```
-git clone https://github.com/cytham/nanovar.git 
-cd nanovar 
+git clone https://github.com/cytham/nanovar-dev.git 
+cd nanovar-dev
 ./configure
 make && make check
 sudo make install # or add the executable "nanovar" to PATH
@@ -49,7 +49,7 @@ sudo make install # or add the executable "nanovar" to PATH
 Or 
 
 #### Download source code:
-Download tarball or zipped source code from [Releases](https://github.com/cytham/nanovar/releases)
+Download tarball or zipped source code from [Releases](https://github.com/cytham/nanovar-dev/releases)
 ```
 tar zxvf nanovar-x.x.tar.gz # or unzip nanovar-x.x.zip
 cd nanovar-x.x
@@ -79,10 +79,10 @@ nanovar [Options] -t 24 -r hg38.fa -l longread.fa -s1 shortread_mate1.fq -s2 sho
 | `-s1` | shortread_mate1.fq | NGS short-read paried-end mate 1 FASTA/FASTQ file |
 | `-s2` | shortread_mate2.fq | NGS short-read paried-end mate 2 FASTA/FASTQ file |
 
-See [Wiki](https://github.com/cytham/nanovar/wiki) for more information.
+See [Wiki](https://github.com/cytham/nanovar-dev/wiki) for more information.
 
 ## Versioning
-See [Releases](https://github.com/cytham/nanovar/releases)
+See [Releases](https://github.com/cytham/nanovar-dev/releases)
 
 ## Citation
 
@@ -94,7 +94,7 @@ See [Releases](https://github.com/cytham/nanovar/releases)
 
 ## License
 
-This project is licensed under GNU General Public License - see [COPYING](https://github.com/cytham/nanovar/blob/master/COPYING) for details.
+This project is licensed under GNU General Public License - see [COPYING](https://github.com/cytham/nanovar-dev/blob/master/COPYING) for details.
 
 ## Simulation datasets
 SV-simulated datasets used for evaluating SV calling accuracy can be downloaded [here](https://doi.org/10.5281/zenodo.2599376).
