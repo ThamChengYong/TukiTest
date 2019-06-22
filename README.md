@@ -1,4 +1,4 @@
-# NanoVar - Structural variant caller using Nanopore sequencing 
+# NanoVar - Structural variant caller using low-depth Nanopore sequencing 
 
 Latest version 1.0
 
@@ -91,11 +91,11 @@ NanoVar: Accurate Characterization of Patients’ Genomic Structural Variants Us
 
 * **Tham Cheng Yong** - [cytham](https://github.com/cytham)
 * **Roberto Tirado Magallanes** - [rtmag](https://github.com/rtmag)
-* **Touati Benoukraf**
+* **Touati Benoukraf** - [benoukraflab](https://github.com/benoukraflab)
 
 ## License
 
 This project is licensed under GNU General Public License - see [COPYING](https://github.com/cytham/nanovar/blob/master/COPYING) for details.
 
 ## Simulation datasets
-Three SV-simulated hg38 datasets used for evaluating SV calling accuracy can be downloaded [here](https://doi.org/10.5281/zenodo.2599376).
+SV-simulated datasets used for evaluating SV calling accuracy can be downloaded [here](https://doi.org/10.5281/zenodo.2599376).
