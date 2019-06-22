@@ -85,7 +85,6 @@ See [Wiki](https://github.com/cytham/nanovar/wiki) for more information.
 See [Releases](https://github.com/cytham/nanovar/releases)
 
 ## Citation
-NanoVar: Accurate Characterization of Patients’ Genomic Structural Variants Using Low-Depth Nanopore Sequencing (Tham et al., 2019)
 
 ## Authors
 
